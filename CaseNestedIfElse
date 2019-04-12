@@ -1,0 +1,120 @@
+#include <iostream>
+
+using namespace std;
+
+//The following code does not integrate "#include <conio.h>" nor "_getch();" due to an error crashing DEVC++ for and from unknown causes. Unresolved.
+//The following code uses switch case statements nested with if-else statements.
+//The Switch and its Cases evaluate the months; whilst the nested If-Else Statements evaluate the validity of the days.
+//The following code does not account for leap days in February, sadly. :'(
+
+int main()
+{ 
+int d, m, y;
+
+cout << "Enter Month, Day, and Year: [XX-XX-XXXX] ";
+cin >> m >> d >> y; 
+
+if (m==1){
+if (d>=32){
+	cout << "INVALID DATE!" << endl;
+}else{
+	cout << "JANUARY" << " " << d << ", " << y << endl;
+}
+}
+break;
+
+case 2:
+if (d>=29){
+	cout << "INVALID DATE!" << endl;
+}else{
+	cout << "FEBRUARY" << " " << d << ", " << y << endl;
+}
+break;
+
+case 3:
+if (d>=32){
+	cout << "INVALID DATE!" << endl;
+}else{
+	cout << "MARCH" << " " << d << ", " << y << endl;
+}
+break;
+
+case 4:
+if (d>=31){
+	cout << "INVALID DATE!" << endl;
+}else{
+	cout << "APRIL" << " " << d << ", " << y << endl;
+}
+break;
+
+case 5:
+if (d>=32){
+	cout << "INVALID DATE!" << endl;
+}else{
+	cout << "MAY" << " " << d << ", " << y << endl;
+}
+break;
+
+case 6:
+if (d>=31){
+	cout << "INVALID DATE!" << endl;
+}else{
+	cout << "JUNE" << " " << d << ", " << y << endl;
+}
+break;
+
+case 7:
+if (d>=32){
+	cout << "INVALID DATE!" << endl;
+}else{
+	cout << "JULY" << " " << d << ", " << y << endl;
+}
+break;
+
+case 8:
+if (d>=32){
+	cout << "INVALID DATE! << endl;
+}else{
+	cout << "AUGUST" << " " << d << ", " << y << endl;
+}
+break;
+
+case 9:
+if (d>=31){
+	cout << "INVALID DATE!" << endl;
+}else{
+	cout << "SEPTEMBER" << " " << d << ", " << y << endl;
+}
+break;
+
+case 10:
+if (d>=32){
+	cout << "INVALID DATE!" << endl;
+}else{
+	cout << "OCTOBER" << " " << d << ", " << y << endl;
+}
+break;
+
+case 11:
+if (d>=31){
+	cout << "INVALID DATE!" << endl;
+}else{
+	cout << "NOVEMBER" << " " << d << ", " << y << endl;
+}
+break;
+
+case 12:
+if (d>=32){
+	cout << "INVALID DATE!" << endl;
+}else{
+	cout << "DECEMBER" << " " << d << ", " << y << endl;
+}
+break;
+
+default:
+cout << "INVALID DATE!" << endl;
+break;
+
+return 0;
+
+}
