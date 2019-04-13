@@ -10,16 +10,18 @@ using namespace std;
 int main()
 { 
 int d, m, y;
+bool decision;
 
 cout << "Enter Month, Day, and Year: [XX-XX-XXXX] ";
 cin >> m >> d >> y; 
 
-if (m==1){
+switch (m)
+
+case 1:
 if (d>=32){
 	cout << "INVALID DATE!" << endl;
 }else{
 	cout << "JANUARY" << " " << d << ", " << y << endl;
-}
 }
 break;
 
@@ -73,7 +75,7 @@ break;
 
 case 8:
 if (d>=32){
-	cout << "INVALID DATE! << endl;
+	cout << "INVALID DATE!" << endl;
 }else{
 	cout << "AUGUST" << " " << d << ", " << y << endl;
 }
@@ -114,6 +116,7 @@ break;
 default:
 cout << "INVALID DATE!" << endl;
 break;
+}
 
 return 0;
 
